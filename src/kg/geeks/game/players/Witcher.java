@@ -35,7 +35,9 @@ public class Witcher extends Hero {
             if (hero.getHealth() == 0) {
                 hero.setHealth(resurrectionPoints); // воскрешаем
                 this.setHealth(0);  // сам колдун погибает
-                System.out.println(Main.ANSI_RED + hero.getName() + " was resurrected by " + this.getName() + Main.ANSI_RESET);
+                System.out.println(Main.ANSI_RED + hero.getClass().getSimpleName() + " " + hero.getName() + " was resurrected by " +
+                        this.getClass().getSimpleName() + " " + this.getName() + " with " + this.getResurrectionPoints()
+                        + " points of health!!!" + Main.ANSI_RESET);
                 break;
             }
         }

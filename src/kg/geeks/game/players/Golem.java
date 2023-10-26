@@ -21,7 +21,7 @@ public class Golem extends Hero {
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
         if (this.getCollectionDamage() > 0) {
-            System.out.println(Main.ANSI_CYAN + "Golem " + this.getName() + " took over "
+            System.out.println(Main.ANSI_CYAN + this.getClass().getSimpleName() + " " + this.getName() + " took over "
                     + this.getCollectionDamage() + " damage points." + Main.ANSI_RESET);
             this.setCollectionDamage(0);
         }

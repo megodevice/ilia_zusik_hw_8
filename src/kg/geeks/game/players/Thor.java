@@ -14,8 +14,8 @@ public class Thor extends Hero {
         boolean stun = RPG_Game.random.nextBoolean(); // получил ли босс оглушительный удар
         boss.setStun(stun);
         if (stun) { // если да то сообщяем об этом
-            System.out.println(Main.ANSI_YELLOW + "Boss " + boss.getName() + " was deafened by "
-                    + this.getName() + "!!!" + Main.ANSI_RESET);
+            System.out.println(Main.ANSI_YELLOW + boss.getClass().getSimpleName() + " " + boss.getName() + " was deafened by "
+                    + this.getClass().getSimpleName() + " " + this.getName() + "!!!" + Main.ANSI_RESET);
         }
     }
 }

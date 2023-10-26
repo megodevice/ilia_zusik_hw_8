@@ -20,7 +20,7 @@ public class Berserk extends Hero {
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
         boss.setHealth(boss.getHealth() - this.blockedDamage);
-        System.out.println(Main.ANSI_GREEN + "Berserk " + this.getName() + " reverted "
+        System.out.println(Main.ANSI_GREEN + this.getClass().getSimpleName() + " " + this.getName() + " reverted "
                 + blockedDamage + Main.ANSI_RESET);
     }
 

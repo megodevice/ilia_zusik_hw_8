@@ -38,8 +38,9 @@ public class Avrora extends Hero {
                     + " apply invisibility for next round!!!" + Main.ANSI_RESET);
         } else if (!invisibilityRound1 && !invisibilityRound2 && invisibilityEnd) { // если 2 раунда было проведено в невидимости то заканчиваем ее действие
             invisibilityEnd = false;
-            System.out.println(Main.ANSI_PURPLE + "Avrora " + this.getName()
-                    + " finished casting invisibility and dealt accumulated " + collectionDamage + " damage!!!" + Main.ANSI_RESET);
+            System.out.println(Main.ANSI_PURPLE + this.getClass().getSimpleName() + " " + this.getName()
+                    + " finished casting invisibility and dealt accumulated " + collectionDamage + " points of damage to "
+                    + boss.getClass().getSimpleName() + " " + boss.getName() + "!!!" + Main.ANSI_RESET);
             boss.setHealth(boss.getHealth() - this.collectionDamage); // и наносим накопленный урон боссу
         }
     }

@@ -12,7 +12,7 @@ public class Warrior extends Hero {
     public void applySuperPower(Boss boss, Hero[] heroes) {
         int coeff = RPG_Game.random.nextInt(9) + 2;
         boss.setHealth(boss.getHealth() - this.getDamage() * coeff);
-        System.out.println(Main.ANSI_PURPLE + "Warrior " + this.getName() + " hits critically "
+        System.out.println(Main.ANSI_PURPLE + this.getClass().getSimpleName() + " " + this.getName() + " hits critically "
                 + this.getDamage() * coeff + Main.ANSI_RESET);
     }
 }

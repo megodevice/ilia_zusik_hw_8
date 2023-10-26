@@ -9,5 +9,5 @@ public enum SuperAbility {
     DEAFEN,
     STONE_PROTECTOR,
     INVISIBILITY,
-    HACK;
+    HACK
 }
