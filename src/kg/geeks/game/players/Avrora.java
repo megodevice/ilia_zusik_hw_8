@@ -18,7 +18,7 @@ public class Avrora extends Hero {
         if ((health > this.getHealth()) || (invisibilityRound1 && invisibilityRound2 && invisibilityEnd)) { // если героя лечат
             super.setHealth(health); //  или если невидимость не используется то присваиваем урон(лечение) как обычно
         } else if ((!invisibilityRound1 || !invisibilityRound2) && invisibilityEnd) { // если невидимость используется в данный момент
-            collectionDamage += this.getHealth() - (this.getHealth() - health); // накапливаем урон
+            collectionDamage += this.getHealth() - health; // накапливаем урон
         } else {
             super.setHealth(health);
         }

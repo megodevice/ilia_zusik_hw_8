@@ -8,5 +8,6 @@ public enum SuperAbility {
     RESURRECTION,
     DEAFEN,
     STONE_PROTECTOR,
-    INVISIBILITY;
+    INVISIBILITY,
+    HACK;
 }

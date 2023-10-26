@@ -21,8 +21,9 @@ public class RPG_Game {
         Thor thor = new Thor(250, 15, "Thori");
         Golem golem = new Golem(500, 5, "Stone");
         Avrora avrora = new Avrora(200, 15, "Ava");
+        Hacker hacker = new Hacker(180, 30, "Neo");
 
-        Hero[] heroes = {warrior1, warrior2, doc, assistant, magic, berserk, witcher, thor, golem, avrora};
+        Hero[] heroes = {warrior1, warrior2, doc, assistant, magic, berserk, witcher, thor, golem, avrora, hacker};
 
         showStatistics(boss, heroes);
 
